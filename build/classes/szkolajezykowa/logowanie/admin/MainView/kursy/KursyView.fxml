@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szkolajezykowa.logowanie.admin.MainView.kursy.KursyViewController">
+   <children>
+      <TableView fx:id="tableKursy" layoutX="53.0" layoutY="47.0" onMouseClicked="#zaznacz" prefHeight="420.0" prefWidth="850.0" stylesheets="@../../../../css/table.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="columnNazwa" prefWidth="201.0" text="Nazwa kursu" />
+          <TableColumn fx:id="columnPoziom" prefWidth="145.0" text="Poziom" />
+            <TableColumn fx:id="columnJezyk" prefWidth="103.0" text="Język" />
+            <TableColumn fx:id="columnGodziny" prefWidth="57.0" text="Godziny" />
+            <TableColumn fx:id="columnProwadzacy" prefWidth="158.0" text="Prowadzący" />
+            <TableColumn fx:id="columnSala" prefWidth="50.0" text="Sala" />
+            <TableColumn fx:id="columnMiejsca" prefWidth="64.0" text="Miejsca" />
+            <TableColumn fx:id="columnCena" prefWidth="64.0" text="Cena" />
+        </columns>
+      </TableView>
+      <HBox layoutX="50.0" layoutY="519.0" prefHeight="51.0" prefWidth="850.0">
+         <children>
+            <JFXButton fx:id="dodajKursBtn" onAction="#dodajKurs" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="DODAJ KURS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="80.0" right="80.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="edytujKursBtn" onAction="#edytujKurs" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="EDYTUJ KURS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="usunKursBtn" onAction="#usunKurs" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="USUŃ KURS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

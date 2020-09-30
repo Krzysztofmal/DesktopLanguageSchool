@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="szkolajezykowa.logowanie.wykladowca.MainView.kursy.KursyViewController">
+   <children>
+      <TableView fx:id="tableKursy" layoutX="58.0" layoutY="51.0" prefHeight="491.0" prefWidth="695.0" stylesheets="@../../../../css/table.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="columnNazwaKursu" prefWidth="192.0" text="Nazwa kursu" />
+          <TableColumn fx:id="columnGodziny" prefWidth="87.0" text="Ilość godzin" />
+            <TableColumn fx:id="columnPoziom" prefWidth="170.0" text="Poziom" />
+            <TableColumn fx:id="columnJezyk" prefWidth="158.0" text="Język" />
+            <TableColumn fx:id="columnSala" prefWidth="81.0" text="Numer sali" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

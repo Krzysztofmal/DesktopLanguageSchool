@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="950.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="szkolajezykowa.logowanie.admin.MainView.kursanci.KursanciViewController">
+   <children>
+      <TableView fx:id="tableKursanci" layoutX="56.0" layoutY="41.0" onMouseClicked="#zaznacz" prefHeight="420.0" prefWidth="200.0" stylesheets="@../../../../css/table.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="columnImie" prefWidth="83.0" text="Imię" />
+          <TableColumn fx:id="columnNazwisko" prefWidth="83.0" text="Nazwisko" />
+            <TableColumn fx:id="columnPesel" prefWidth="110.0" text="PESEL" />
+            <TableColumn fx:id="columnTelefon" prefWidth="103.0" text="Telefon" />
+            <TableColumn fx:id="columnEmail" prefWidth="141.0" text="E-mail" />
+            <TableColumn fx:id="columnLogin" prefWidth="118.0" text="Login" />
+            <TableColumn fx:id="columnPlec" prefWidth="52.0" text="Płeć" />
+            <TableColumn fx:id="columnStatus" prefWidth="154.0" text="Status" />
+        </columns>
+      </TableView>
+      <HBox layoutX="60.0" layoutY="529.0" prefHeight="51.0" prefWidth="850.0">
+         <children>
+            <JFXButton fx:id="dodajKursantaBtn" onAction="#dodajKursanta" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="DODAJ KURSANTA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="80.0" right="80.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="edytujKursantaBtn" onAction="#edytujKursanta" prefHeight="50.0" prefWidth="194.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="EDYTUJ KURSANTA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="usunKursantaBtn" onAction="#usunKursanta" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="USUŃ KURSANTA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

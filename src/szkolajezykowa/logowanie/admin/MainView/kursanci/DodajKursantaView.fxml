@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="szkolajezykowa.logowanie.admin.MainView.kursanci.DodajKursantaViewController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="640.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox layoutX="100.0" layoutY="69.0" prefHeight="496.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <JFXTextField fx:id="fLogin" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="Login">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="fHaslo" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="Hasło">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="fHaslo2" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="Wpisz ponownie swoje hasło">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <JFXTextField fx:id="fImie" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="Imie">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fNazwisko" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="Nazwisko">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fPesel" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="PESEL">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fEmail" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="E-mail">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fTelefon" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" promptText="Numer telefonu">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox prefHeight="24.0" prefWidth="400.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Wybierz płeć :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXRadioButton fx:id="rKobieta" text="Kobieta">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="plecRadio" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rMezczyzna" text="Mężczyzna" toggleGroup="$plecRadio">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                     </children>
+                  </HBox>
+                  <JFXComboBox fx:id="statusCb" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="30.0" prefWidth="400.0" promptText="Wybierz swój status">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox alignment="CENTER" prefHeight="33.0" prefWidth="400.0">
+                     <children>
+                        <JFXButton fx:id="rejestrujBtn" onAction="#rejestrujKursanta" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="ZAREJESTRUJ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label fx:id="bladLabel" alignment="CENTER" contentDisplay="TOP" text="Dane zostały uzupełnione nieprawidłowo lub login jest już zajęty." textAlignment="CENTER" textFill="#fd4141" visible="false">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

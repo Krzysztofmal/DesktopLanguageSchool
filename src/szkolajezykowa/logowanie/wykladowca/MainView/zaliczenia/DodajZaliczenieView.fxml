@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="szkolajezykowa.logowanie.wykladowca.MainView.zaliczenia.DodajZaliczenieViewController">
+   <children>
+      <VBox layoutX="288.0" layoutY="133.0" prefHeight="200.0" prefWidth="100.0" spacing="40.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <JFXComboBox fx:id="cbKurs" labelFloat="true" prefHeight="35.0" prefWidth="341.0" promptText="Wybierz kurs" />
+            <JFXComboBox fx:id="cbKursant" labelFloat="true" prefHeight="35.0" prefWidth="372.0" promptText="Wybierz kursanta" />
+            <JFXDatePicker fx:id="dtData" editable="false" prefHeight="35.0" prefWidth="383.0" promptText="Data zaliczenia" />
+            <JFXComboBox fx:id="cbTyp" labelFloat="true" prefHeight="35.0" prefWidth="391.0" promptText="Typ zaliczenia" />
+            <JFXTextField fx:id="fPunkty" labelFloat="true" prefHeight="35.0" promptText="Ilość punktów (od 0 do 100)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </VBox>
+      <HBox layoutX="230.0" layoutY="526.0" prefHeight="52.0" prefWidth="375.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0">
+         <children>
+            <JFXButton fx:id="dodajZaliczenieBtn" onAction="#dodajZaliczenie" prefHeight="50.0" prefWidth="190.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="DODAJ ZALICZENIE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="anulujBtn" onAction="#anuluj" prefHeight="50.0" prefWidth="190.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="ANULUJ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

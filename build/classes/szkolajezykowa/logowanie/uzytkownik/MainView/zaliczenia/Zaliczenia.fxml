@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="szkolajezykowa.logowanie.uzytkownik.MainView.zaliczenia.ZaliczeniaController">
+   <children>
+      <TableView fx:id="tableZaliczenia" layoutX="83.0" layoutY="53.0" onMouseClicked="#zaznacz" prefHeight="360.0" prefWidth="675.0" stylesheets="@../../../../css/table.css" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="columnNazwaKursu" prefWidth="152.0" text="Nazwa kursu" />
+          <TableColumn fx:id="columnProwadzacy" prefWidth="124.0" text="Prowadzący" />
+            <TableColumn fx:id="columnJezyk" prefWidth="75.0" text="Język" />
+            <TableColumn fx:id="columnPoziom" prefWidth="92.0" text="Poziom" />
+            <TableColumn fx:id="columnData" prefWidth="89.0" text="Data" />
+            <TableColumn fx:id="columnTyp" prefWidth="74.0" text="Typ" />
+            <TableColumn fx:id="columnWynik" prefWidth="64.0" text="Wynik" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="483.0" prefHeight="44.0" prefWidth="169.0" text="Rezultat :">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelRezultat" layoutX="238.0" layoutY="483.0" textFill="#41d019">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

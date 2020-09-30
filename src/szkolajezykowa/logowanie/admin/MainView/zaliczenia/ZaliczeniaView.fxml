@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szkolajezykowa.logowanie.admin.MainView.zaliczenia.ZaliczeniaViewController">
+   <children>
+      <TableView fx:id="tableZaliczenia" layoutX="49.0" layoutY="40.0" onMouseClicked="#zaznacz" prefHeight="420.0" prefWidth="200.0" stylesheets="@../../../../css/table.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="columnNazwaKursu" prefWidth="160.0" text="Nazwa Kursu" />
+          <TableColumn fx:id="columnJezyk" prefWidth="82.0" text="Język" />
+            <TableColumn fx:id="columnPoziom" prefWidth="130.0" text="Poziom" />
+            <TableColumn fx:id="columnProwadzacy" prefWidth="121.0" text="Prowadzący" />
+            <TableColumn fx:id="columnKursant" prefWidth="145.0" text="Kursant" />
+            <TableColumn fx:id="columnData" prefWidth="103.0" text="Data" />
+            <TableColumn fx:id="columnTyp" prefWidth="91.0" text="Typ" />
+            <TableColumn fx:id="columnWynik" prefWidth="52.0" text="Wynik" />
+        </columns>
+      </TableView>
+      <HBox layoutX="70.0" layoutY="539.0" prefHeight="51.0" prefWidth="850.0">
+         <children>
+            <JFXButton fx:id="dodajZaliczenieBtn" onAction="#dodajZaliczenie" prefHeight="50.0" prefWidth="187.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="DODAJ ZALICZENIE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="80.0" right="80.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="edytujZaliczenieBtn" onAction="#edytujZaliczenie" prefHeight="50.0" prefWidth="194.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="EDYTUJ ZALICZENIE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="usunZaliczenieBtn" onAction="#usunZaliczenie" prefHeight="50.0" prefWidth="180.0" style="-fx-border-style: solid; -fx-border-color: #003fff;" text="USUŃ ZALICZENIE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
