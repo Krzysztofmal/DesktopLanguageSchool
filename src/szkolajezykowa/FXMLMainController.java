@@ -62,17 +62,7 @@ public class FXMLMainController implements Initializable {
     }
     
     public void setNode(Node node){
-        //przekopiować to w lepsze miejsca
-        /*
-        AudioClip powiadomMnie = new AudioClip((getClass().getResource("audio/Notify.wav")).toString());
-        powiadomMnie.play();
         
-        tray = new TrayNotification();
-        tray.setTitle("Gratulacje!");
-        tray.setMessage("Właśnie otworzyłeś formularz");
-        tray.setNotificationType(NotificationType.SUCCESS);
-        tray.showAndDismiss(Duration.millis(1500));
-        */
         
         anchorPane.getChildren().clear();
         anchorPane.getChildren().add((Node) node);
@@ -136,14 +126,7 @@ public class FXMLMainController implements Initializable {
             } catch (IOException ex) {
             ex.printStackTrace();
         }
-        //Błąd z hamburgerem XD
-        /*
-        HamburgerSlideCloseTransition transition = new HamburgerSlideCloseTransition(hamburger);
-        transition.setRate(-1);
-        hamburger.addEventHandler(MouseEvent.MOUSE_CLICKED, (e) -> {
-            transition.setRate(transition.getRate()*-1);
-            transition.play();
-        });*/
+      
     }    
 
 

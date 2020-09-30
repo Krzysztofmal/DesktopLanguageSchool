@@ -116,11 +116,7 @@ public class EdytujKursViewController implements Initializable {
             public void changed(ObservableValue observable, Object oldValue, Object newValue) {
                 if (newValue != null) {
 
-                    //cbProwadzacy.setPromptText("");
-                    // przemyśleć :D
-                    //WykladowcyDetails wd = new WykladowcyDetails(0, "", "", "", "", "", "", "");
-                    //WykladowcyDetails wd;
-                    //cbProwadzacy.setValue(wd);
+                    
                     dataWykladowcy = FXCollections.observableArrayList();
                     dataWykladowcy.clear();
                     try {

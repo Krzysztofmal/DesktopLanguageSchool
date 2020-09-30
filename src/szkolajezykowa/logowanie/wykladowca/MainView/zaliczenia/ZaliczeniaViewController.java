@@ -158,7 +158,7 @@ public class ZaliczeniaViewController implements Initializable {
             tray.setNotificationType(NotificationType.SUCCESS);
             tray.showAndDismiss(Duration.millis(1500));
             
-            //odswiezyc 
+            
     }
     
 }

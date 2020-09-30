@@ -137,13 +137,7 @@ public class RejestracjaViewController implements Initializable {
             tray.setNotificationType(NotificationType.SUCCESS);
             tray.showAndDismiss(Duration.millis(1500));
 
-            //zmienić
-            /*
-            AnchorPane logowanie = FXMLLoader.load(SzkolaJezykowa.class.getResource("logowanie/LoginView.fxml"));
-            AnchorPane home_parent2 = (AnchorPane) rejestrujBtn.getParent().getParent().getParent();
             
-            home_parent2.getChildren().clear();
-            home_parent2.getChildren().add(logowanie);*/
         }
 
         if (rejestruj == false) {
